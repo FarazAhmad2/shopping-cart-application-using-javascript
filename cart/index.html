@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/navbar.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="navbar">
+        <h3><a href="/shop/">Shopping Cart</a></h3>
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/signup/login.html" class="nav-link">Login</a></li>
+          <li><a href="/signup" class="nav-link">Signup</a></li>
+          <li><a href="/cart/" class="nav-link">My Cart</a></li>
+          <li><a href="/profile/" class="nav-link">Profile</a></li>
+        </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+      </nav>
+
+      <h1>My Cart</h1>
+      <main>
+        <section class="cart-section">
+          <div class="items" id="cart-items">
+            
+          </div>  
+        </section>
+        <section class="checkout-section">
+          <h3>Checkout List</h3>
+          <div class="checkout">
+            
+          </div>
+        </section>
+      </main>
+
+    </div>
+    <script src="/navbar.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

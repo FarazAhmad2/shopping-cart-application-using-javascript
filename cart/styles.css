@@ -1,0 +1,169 @@
+.wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 77.45px;
+    text-align: center;
+    padding-top: 4.5rem;
+}
+
+main {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.cart-section {
+    width: 70%;
+}
+
+.items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.items .item {
+    border: 1px solid black;
+    width: 30%;
+    min-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.items .item img {
+    max-width: 100%;
+    aspect-ratio: 4/5;
+    padding: 1rem;
+}
+
+.items .item .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items .item .info {
+    padding: 1rem;
+}
+
+.items .item .title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.items .item button {
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.checkout-section {
+    margin: 1rem 0;
+    width: 30%;
+    background-color: #000000;
+    color: #ffffff;
+    height: fit-content;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkout-section h3 {
+    padding: 1.5rem 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 29.05px;
+    text-align: center;
+}
+
+.checkout .row {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.checkout .total {
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+
+.checkout .total p:first-child {
+    font-weight: 700;
+}
+
+.checkoutBtn {
+    font-size: 1rem;
+    line-height: 29.05px;
+    text-align: center;
+    background-color: #ffffff;
+    margin:  1rem 1rem 6rem;
+    padding: 0.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    main {
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+
+    .cart-section {
+        order: 1;
+    }
+
+    .cart-section, .checkout-section {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    .cart-section, .checkout-section {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .wrapper h1 {
+        padding-top: 8rem;
+        padding-bottom: 1.8rem;
+        font-size: 4rem;
+    }
+
+    main, .checkout-section h3, .checkoutBtn, .items .item button {
+        font-size: 1.5rem;
+    }
+
+    .checkout-section h3 {
+        padding: 3.5rem 2rem 2.5rem;
+    }
+
+    .checkoutBtn {
+        padding: 1rem;
+        margin: 2rem 2rem 10rem;
+    }
+
+    .checkout .row {
+        padding: 0.5rem 2rem;
+    }
+
+    .checkout .total {
+        padding: 1.5rem 2rem;
+    }
+}

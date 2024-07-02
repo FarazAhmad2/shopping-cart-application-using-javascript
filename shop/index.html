@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeShop.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/navbar.css">
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <h3><a href="/">MeShop.</a></h3>
+    <ul class="nav-menu">
+      <li><a href="/" class="nav-link">Home</a></li>
+      <li><a href="/signup/login.html" class="nav-link">Login</a></li>
+      <li><a href="/signup" class="nav-link">Signup</a></li>
+      <li><a href="/cart/" class="nav-link">My Cart</a></li>
+      <li><a href="/profile/" class="nav-link">Profile</a></li>
+    </ul>
+    <div class="nav-icons">
+      <span id="sidebar-filter">filters</span>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <aside>
+      <section>
+        <title>Colors</title>
+        <ul>
+          <li>
+            <input id="red" class="cs-checkbox" type="checkbox" name="color" value="red" />
+            <label for="red">Red</label>
+          </li>
+          <li>
+            <input id="blue" class="cs-checkbox" type="checkbox" name="color" value="blue" />
+            <label for="blue">Blue</label>
+          </li>
+          <li>
+            <input id="green" class="cs-checkbox" type="checkbox" name="color" value="green" />
+            <label for="green">Green</label>
+          </li>
+          <li>
+            <input id="black" class="cs-checkbox" type="checkbox" name="color" value="black" />
+            <label for="black">Black</label>
+          </li>
+          <li>
+            <input id="white" class="cs-checkbox" type="checkbox" name="color" value="white" />
+            <label for="white">White</label>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <title>Sizes</title>
+        <ul>
+          <li>
+            <input id="s" class="cs-checkbox" type="checkbox" name="color" value="S" />
+            <label for="s">S</label>
+          </li>
+          <li>
+            <input id="m" class="cs-checkbox" type="checkbox" name="color" value="M" />
+            <label for="m">M</label>
+          </li>
+          <li>
+            <input id="l" class="cs-checkbox" type="checkbox" name="color" value="L" />
+            <label for="l">L</label>
+          </li>
+          <li>
+            <input id="xl" class="cs-checkbox" type="checkbox" name="color" value="XL" />
+            <label for="xl">XL</label>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <title>Rating</title>
+        <input type="range" id="range" min="0" max="5" value="0" list="values" />
+        <datalist id="values">
+          <option value="0" label="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5" label="5"></option>
+        </datalist>
+      </section>
+      <section>
+        <title>Price Range</title>
+        <ul>
+          <li>
+            <input id="0-25" type="checkbox" name="prange" data-min="0" data-max="25" />
+            <label for="0-25">$0 to $25</label>
+          </li>
+          <li>
+            <input id="25-50" type="checkbox" name="prange" data-min="26" data-max="50" />
+            <label for="25-50">$25 to $50</label>
+          </li>
+          <li>
+            <input id="50-100" type="checkbox" name="prange" data-min="51" data-max="100" />
+            <label for="50-100">$50 to $100</label>
+          </li>
+          <li>
+            <input id="100on" type="checkbox" name="prange" data-min="101" data-max="Infinity" />
+            <label for="100on">$100 onwards</label>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <main-content>
+      <input id="search" type="text" placeholder="Search" />
+      <div class="filters">
+        <div class="filter active">All</div>
+        <div class="filter" data-category="men's clothing">Mens</div>
+        <div class="filter" data-category="women's clothing">Womens</div>
+        <div class="filter" data-category="jewelery">Jewellery</div>
+        <div class="filter" data-category="electronics">Electronics</div>
+      </div>
+      <section id="men-section">
+        <title>Men's Clothing</title>
+        <div class="items" id="men-items"></div>
+      </section>
+
+      <section id="women-section">
+        <title>Women's Clothing</title>
+        <div class="items" id="women-items"></div>
+      </section>
+
+      <section id="jewellery-section">
+        <title>Jewellery</title>
+        <div class="items" id="jewellery"></div>
+      </section>
+
+      <section id="electronics-section">
+        <title>Electronics</title>
+        <div class="items" id="electronics"></div>
+      </section>
+      <p class="error">Couldn't find the product!</p>
+    </main-content>
+  </main>
+  <script src="/navbar.js"></script>
+  <script type="module" src="./script.js"></script>
+</body>
+
+</html>

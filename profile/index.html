@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Profile</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="/navbar.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="navbar">
+      <h3><a href="/shop/index.html">Shopping Cart</a></h3>
+  </div>
+
+  <section class="container">
+    <h1>My Profile</h1>
+    <form action="#" id="profile">
+      <input type="text" id="fname" placeholder="First Name">
+      <input type="text" id="lname" placeholder="Last Name">
+      <button id="save-info">Save Info</button>
+      <p id="success"></p>
+    </form>
+
+    <h1 id="heading">Edit Password</h1>
+    <form action="#" id="pass">
+      <input type="password" id="old-pass" placeholder="Old Password">
+      <input type="password" id="new-pass" placeholder="New Password">
+      <input type="password" id="confirm-pass" placeholder="Confirm New Password">
+      <button id="change-pass">Change Password</button>
+      <button id="logout">Logout</button>
+      <p id="error"></p>
+      <p id="success-2"></p>
+    </form>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>

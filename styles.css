@@ -1,0 +1,93 @@
+.main-content {
+    padding: 5rem 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 76.82px;
+}
+
+.main-content p {
+    font-size: 1.125rem;
+    line-height: 36.31px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.btns {
+    margin-top: 1.5rem;
+}
+
+#login-btn,
+#signup-btn {
+    width: 8rem;
+    height: 2.2rem;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 29.05px;
+    border: none;
+    cursor: pointer;
+}
+
+#signup-btn {
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+.img-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+.img-fluid img {
+    width: 60vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1500px) {
+
+    .main-content {
+        padding-left: 3.9rem;
+        padding-top: 10rem;
+    }
+
+    .main-content h1 {
+        font-size: 5rem;
+        line-height: 96.82px;
+    }
+
+    .main-content p {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        line-height: 36.31px;
+    }
+
+    .btns {
+        margin-top: 3rem;
+    }
+
+    #login-btn, #signup-btn {
+        width: 12.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    #signup-btn {
+        margin-left: 2rem;
+    }
+
+    .img-fluid img {
+        width: 52vw;
+    }
+}
