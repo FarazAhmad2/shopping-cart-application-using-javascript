@@ -124,6 +124,7 @@ main-content .filter {
 main-content .filter.active {
   background-color: black;
   color: white;
+  transition: 0.6s 0.2s;
 }
 
 main-content section {
@@ -182,6 +183,11 @@ main-content .items .item button {
   color: white;
   background-color: black;
   cursor: pointer;
+  transition: 0.6s 0.2s;
+}
+
+main-content .items .item button:hover {
+  color: #ffffffcc;
 }
 
 main-content .items .item .colors {

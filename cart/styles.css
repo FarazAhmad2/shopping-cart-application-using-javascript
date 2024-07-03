@@ -65,6 +65,12 @@ main {
     color: white;
     background-color: black;
     cursor: pointer;
+  transition: 0.6s 0.2s;
+
+}
+
+.items .item button:hover {
+    color: #ffffffcc;
 }
 
 .checkout-section {
@@ -116,6 +122,11 @@ main {
     padding: 0.4rem;
     border: none;
     cursor: pointer;
+    transition: 0.6s 0.2s;
+}
+
+.checkoutBtn:hover {
+    background-color: #ffffffcc;
 }
 
 @media screen and (max-width:767px) {
